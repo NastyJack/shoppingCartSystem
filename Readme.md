@@ -8,7 +8,7 @@ Cart System is built to perform operations based on the given requirements. The 
 
 ## Summary
 
-Modules and their features are explained below :
+The flow of API requests begins from nodeAPILayer, which then performs another API request to javaBackend for cart operations. Modules and their features are explained below :
 
 ### javaBackend
 

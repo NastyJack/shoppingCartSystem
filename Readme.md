@@ -1,10 +1,18 @@
-# Shopping Cart System
+# Shopping Cart System 🛒
 
 Cart System is built to perform operations based on the given requirements. The repository holds three modules :
 
 1. javaBackend - core business logic for discounts and cart management. (Spring boot, Maven, Java 21)
 2. nodeAPILayer - API Layer for javaBackend with authentication and logging. (Node.js, Express, Javascript)
 3. pythonScript - cart analysis with PDF report generation. (Python)
+
+#### API Requests Sample
+
+![](resources/snapshot.gif)
+
+#### Report PDF Sample
+
+![](resources/pythonReportSample.png)
 
 ## Summary
 
@@ -72,19 +80,27 @@ Modules and their features are explained below :
 The following routes are available at nodeAPILayer :
 
 1. POST : http://localhost:9090/cart/addItem
+
    Req : { "item" : "Melon" }
+
    Res : { "message" : "Item added to cart", cart : ["Melon"] }
 
 2. GET : http://localhost:9090/cart/view
+
    Req :
+
    Res : { "message" : "Item added to cart", cart : ["Melon"] }
 
 3. POST : http://localhost:9090/cart/calculatePrice
+
    Req : { "item" : "Melon" }
+
    Res : { "message" : "Price Calculation Successful", "price": "50p" }
 
 4. DELETE : http://localhost:9090/cart/clear
+
    Req :
+
    Res : { "message" : "Cart has been cleared.", "cart": [] }
 
 Similar routes are also available at javaBackend but with slightly different object structure.

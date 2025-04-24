@@ -93,7 +93,7 @@ The following routes are available at nodeAPILayer :
 
 3. POST : http://localhost:9090/cart/calculatePrice
 
-   Req : { "item" : "Melon" }
+   Req :
 
    Res : { "message" : "Price Calculation Successful", "price": "50p" }
 

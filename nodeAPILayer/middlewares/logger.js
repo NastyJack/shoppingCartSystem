@@ -20,7 +20,7 @@ function logToFile(data) {
   }
 }
 
-// 📤 Request Interceptor
+// Request Interceptor
 axios.interceptors.request.use(
   (config) => {
     const requestId = uuidv4();
@@ -60,7 +60,7 @@ axios.interceptors.request.use(
   }
 );
 
-// 📥 Response Interceptor
+// Response Interceptor
 axios.interceptors.response.use(
   (response) => {
     const endTime = new Date();

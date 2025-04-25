@@ -49,8 +49,16 @@ The flow of API requests begins from nodeAPILayer, which then performs another A
 ### pythonScript
 
 - The codebase reads the generated log file at nodeAPILayer.
-- Two functions are defined namely 1. analyze_log 2. generate_pdf_report.
-- The data read is then split into the following categories and written to a PDF : 1. item_add_freq - The count of times an item was added. 2. clear_count - No. of times cart was cleared. 3. total_items - The final cart contents. 4. raw_total - Price without discounts. 5. discounted_total - Price after discounts. 6. item_sequences - For most commonly found cart item adding sequences.
+- Two functions are defined namely
+  1. analyze_log
+  2. generate_pdf_report.
+- The data read is then split into the following categories and written to a PDF :
+  1. item_add_freq - The count of times an item was added.
+  2. clear_count - No. of times cart was cleared.
+  3. total_items - The final cart contents.
+  4. raw_total - Price without discounts.
+  5. discounted_total - Price after discounts.
+  6. item_sequences - For most commonly found cart item adding sequences.
 - The final data is then written to a PDF file using canvas.
 
 ## Running the modules
